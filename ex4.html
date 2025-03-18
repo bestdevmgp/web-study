@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    const input = prompt('message', '_default')
+    alert(input)
+
+    console.log(typeof(2 + '3')) // 23
+    console.log(typeof(2 - '3')) // -1
+    console.log(typeof(2 * '3')) // 6
+    console.log(typeof(2 / '3')) // 0.6666666666...
+
+    // false, 빈 문자열, 0, NaN, null, undefined => false
+
+    const rawInput = prompt('inch 단위의 숫자를 입력해주세요.')
+
+    // 입력받은 데이터를 숫자형으로 변경하고 cm 단위로 변경한다
+    const inch = Number(rawInput)
+    const cm = inch * 2.54
+
+    alert(`${inch}inch는 ${cm}cm 입니다.`)
+
+    // Quiz 1
+    console.log(!!24) // true
+    console.log(!!`대구소마고`) // true
+    console.log(!!NaN) // false
+    console.log(!!null) // false
+
+    // Quiz 2
+    const input = prompt('숫자를 입력하세요(cm)')
+    const cm = Number(input)
+    const inch = cm * 0.393701
+    alert(`${cm}cm는 ${inch}inch 입니다.`)
+
+    // Quiz 3
+    const input = prompt("반지름을 입력하세요.")
+    const radius = Number(input)
+    const size = 3.14 * radius ^ 2
+    const round = 2 * 3.14 * radius
+
+    alert(`원의 반지름: ${radius}\n원의 넓이: ${size}\n원의 둘레: ${round}`)
+</script>
+<body>
+
+</body>
+</html>

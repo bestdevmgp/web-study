@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    let star = "";
+    for (let i = 0; i <= 4; i++) {
+        star += "*".repeat(i) + "\n";
+    }
+    alert(star)
+
+    let output = "";
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= i; j++) {
+            output += "*"
+        }
+        output += "\n"
+    }
+    alert(output)
+
+    // Quiz 4-4
+    let sum = 1;
+    for (let i = 1; i < 10; i++) {
+        sum *= i;
+    }
+    alert(sum)
+
+    // Quiz 4-5
+    let i = 5;
+    while (i >= 0) {
+        if (i == 0) {
+            alert("출발");
+            break;
+        } else {
+            alert(i);
+            i--;
+        }
+    }
+</script>
+<body>
+
+</body>
+</html>

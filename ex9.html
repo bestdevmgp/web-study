@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Quiz 1
+        a = prompt()
+        b = prompt()
+        sum = 1;
+        function multiplyAll(a, b) {
+            for (let i = 1; i <= b; i++) {
+                sum *= i;
+            }
+            return sum;
+        }
+        console.log(multiplyAll(a, b))
+
+        // Quiz 2
+        const max = function(array) {
+            let output = array[0]
+
+            for (let i = 1; i < array.length; i++) {
+                if (array[i] > output) {
+                    output = array[i]
+                }
+            }
+            return output
+        }
+        console.log(max([1, 2, 3, 4]))
+
+        // Quiz 3
+        let numbers = [273, 25, 75, 52, 103, 32, 57, 24, 76];
+        numbers
+            .filter(x => x % 2 === 1 && x <= 100 && x % 5 === 0)
+            .forEach(x =>{
+                console.log(x)
+            })
+
+        // Quiz 4
+        const array = ['사과', '베', '귤', '바나나']
+        console.log('for in')
+        array.forEach(function (value, index, array) {
+            console.log(`${index}`)
+        })
+
+        console.log('for of')
+        array.forEach(function (value, index, array) {
+            console.log(`${value}`)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src = "test.js"></script>
+    <script>
+        console.log("# ex11.html의 html 태그")
+        console.log("sample 값: ", sample)
+
+        // Quiz 1
+        const num = 52000
+        num.원 = function () {
+            return this.valueOf() + '원'
+        }
+
+        console.log(num.원())
+        // 출력 결과
+        // TypeError: Cannot set properties of a number (setting '원')
+        // num 은 기본형(primitive)인 Number 타입이다.
+        // 기본형은 객체가 아니기 때문에, 여기에 프로퍼티(예: 원)를 직접 추가할 수 없다.
+
+        // Quiz 2
+        const books = [{
+            name:"2학년 3반",
+            school:"대소고",
+            classNum:3,
+        },{
+            name:"2학년 2반",
+            school:"대소고",
+            classNum:2,
+        },{
+            name:"2학년 4반",
+            school:"대소고",
+            classNum:4,
+        },{
+            name:"2학년 1반",
+            school:"대소고",
+            classNum:1,
+        }]
+        const output = _.orderBy(nums, (num) => num.name)
+        console.log(output)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

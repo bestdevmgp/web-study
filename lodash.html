@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+        // 데이터를 생성합니다.
+        const nums = [{
+            name: `2학년 3반`,
+            school: `대소고`,
+            classNum: `3`
+        },
+        {
+            name: `2학년 2반`,
+            school: `대소고`,
+            classNum: `2`
+        },
+        {
+            name: `2학년 1반`,
+            school: `대소고`,
+            classNum: `1`
+        },
+        {
+            name: `2학년 4반`,
+            school: `대소고`,
+            classNum: `4`
+        }]
+
+        const output = _.orderBy(nums, (num) => num.name)
+        // _.orderBy(컬렉션, [정렬기준], [정렬순서])
+        console.log(output)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
